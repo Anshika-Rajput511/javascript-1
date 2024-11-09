@@ -12,5 +12,5 @@ console.log(b);  // 20
 console.log(c);  // 30
 
 for(let i=1; i<4; i++){
-    console.log(i);    // i have bock scope
+    console.log(i);    // i have block scope
 }
