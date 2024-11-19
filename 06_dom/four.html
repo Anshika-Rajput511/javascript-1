@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style ="background-color: black; color: white">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+      const li = document.createElement('li')
+      li.innerHTML = `${langName}`    // when we use innerHTML then it will traverse complete element
+      document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage("Python")
+    addLanguage("Java")
+
+    function addOptiLanguage(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))   // recommended to use appendChild
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addOptiLanguage('goLang')
+
+
+    // EDIT
+   const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "Mojo"
+   const newli=  document.createElement('li')
+   newli.textContent = "Mojo"
+   secondLang.replaceWith(newli)
+    </script>
+</html>
