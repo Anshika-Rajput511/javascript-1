@@ -1,0 +1,30 @@
+body{
+    background-color: grey;
+}
+
+p{
+    padding:20px;
+}
+
+button{
+    margin-left:7rem;
+    height:2rem;
+    width:14%;
+    border-radius:10px;
+}
+
+#result{
+    margin-left:7rem;
+    padding: 1rem;
+    font-size: 20px;
+    color: goldenrod;
+}
+
+#weight-guide{
+    margin-left: 8%;
+}
+
+#weight-guide p{
+   padding:5px;
+}
+
